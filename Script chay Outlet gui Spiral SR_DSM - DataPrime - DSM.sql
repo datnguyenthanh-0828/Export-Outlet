@@ -1,20 +1,8 @@
-﻿----------------------DSM----------------------
-
---------------------------------
-
-Declare @CurrentDate Date = GetDate()
+﻿Declare @CurrentDate Date = GetDate()
 Declare @Month Date
 Declare @PreMonth Date
 
-Set @Month = '2026-03-01'--Dateadd(MM,DATEDIFF(MONTH,0,@CurrentDate),0)
-
---Set @PreMonth = '2026-01-01'--DATEADD(MM, DATEDIFF(MM, 0, DateAdd(MM, -1, @CurrentDate)), 0);
-
---Select @PreMonth, @Month ;
-;
---------------------------------
---DSM
-
+Set @Month = '2026-03-01'
 With #Outlet_DSM as
 (
 
